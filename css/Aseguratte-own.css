@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
 *
 {
     margin: 0px;
@@ -6,16 +9,51 @@
 
 body
 {
-    height: max-content;
+    height: 90vh;
     width: max-content;
 }
 
 .login-container{
-    width: 36%;
-    height: 60%;
+    width: 34%;
+    height: 75%;
 }
 
 .text-label{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
+}
+
+
+.Oficial-color{
+    background-color: #A2D2DF;
+}
+
+.Oficial-color-text{
+    color: #F4F6FF;
+}
+
+.header-custom-login{
+    height: 18%;
+}
+
+.h1-custom-login{
+    font-size: 3rem;
+    letter-spacing: 8px;
+}
+
+.oswald-1 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.img-logo-login{
+    width: 5rem;
+    height: 5rem;
+}
+
+.img-header-logo{
+    width: 28rem;
+    height: 4rem;
 }
