@@ -6,6 +6,8 @@
     <title>Aseguratte Login - Visual Tickets</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/Aseguratte-own.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.js" ></script>
 </head>
 <body class="Oficial-color">
     <header class="container-fluid Oficial-color header-custom-login d-flex align-items-center">
@@ -19,15 +21,15 @@
             <div class="container-fluid w-auto mt-4  d-flex  justify-content-center  pb-2">
                 <img src="img/Logo-login.jpeg" class="img-logo-login">
             </div>
-            <form>
+            <form  id="LoginForm">
             <div class="container-fluid form-group mt-4 mb-3 d-flex flex-column align-items-center">
                     <div class="mt-2 col-6">
-                    <label for="UserName" class="form-label text-label">Usuario</label>
-                    <input type="text" class="form-control " id="UserName">
+                    <label for="username" class="form-label text-label">Usuario</label>
+                    <input type="text" class="form-control " id="username"  name="username" required>
                   </div>
                   <div class="mt-3 col-6">
-                    <label for="exampleInputPassword1" class="form-label text-label">Contraseña</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <label for="password" class="form-label text-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
                   </div>
                   <div class="container-fluid row justify-content-center mt-4">
                 <button type="submit" class="btn btn-info col-6"><strong class="text-white">Ingresar</strong></button>
@@ -41,5 +43,18 @@
             <p class="text-center text-white"> @2024 - Aseguratte, todos los derechos reservados.</p>
         </div>
     </footer>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <strong class="me-auto">Notificacion</strong>
+            <small id="timer-toast"></small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            
+          </div>
+        </div>
+      </div>
+    <script src="js/Ajax/LoginPost.js"></script>
 </body>
 </html>
